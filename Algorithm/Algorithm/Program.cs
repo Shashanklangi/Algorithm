@@ -8,6 +8,7 @@ namespace Algorithm
         {
             Console.WriteLine("1: For Insertion Sort");
             Console.WriteLine("2: For Bubble Sort");
+            Console.WriteLine("3: For Anagram");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +22,10 @@ namespace Algorithm
                     BubbleSort bubblesort = new BubbleSort();
                     bubblesort.Bubblesort();
                     Console.WriteLine();
+                    break;
+                case 3:
+                    Anagram anagram = new Anagram();
+                    anagram.Anagrams();
                     break;
                 default:
                     Console.WriteLine("Number is Invalid");
